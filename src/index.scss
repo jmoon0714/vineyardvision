@@ -1,0 +1,59 @@
+/* Importing individual component styles */
+@import './components/header/header.scss';
+@import './components/hero/hero.scss';
+@import './components/mission/mission.scss';
+@import './components/vision/vision.scss';
+@import './components/team/team.scss';
+@import './components/news/news.scss';
+@import './components/technology/technology.scss';
+@import './components/contact/contact.scss';
+@import './components/footer/footer.scss';
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff9ed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#top-banner {
+  background-color: #04212b;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#top-banner p {
+  margin: 0;
+  color: #fff9ed;
+}
+
+#top-banner a {
+  color: #fff9ed;
+  text-decoration: none;
+}
+
+/* Button Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn.pulse {
+  animation: pulse 2s infinite;
+}
