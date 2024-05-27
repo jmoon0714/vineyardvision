@@ -1,0 +1,23 @@
+// _mixins.scss
+@mixin light-theme {
+  background-color: $light-background-color;
+  color: $light-font-color;
+  a {
+    color: $light-link-color;
+    &:hover {
+      color: $light-link-hover-color;
+    }
+  }
+}
+
+@mixin dark-theme {
+  background-color: $dark-background-color;
+  color: $dark-font-color;
+  a {
+    color: $dark-link-color;
+
+    &:hover {
+      color: $dark-link-hover-color;
+    }
+  }
+}

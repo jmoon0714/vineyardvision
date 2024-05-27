@@ -1,17 +1,19 @@
-import React from 'react';
-import './hero.scss';
+import React from "react";
+import "./hero.scss";
 
 const Hero = () => {
   return (
-    <section id="hero">
+    <section id="hero" className="container">
       <div className="hero-content">
-        <h1>Detect and Protect</h1>
-        <p>
-          We're a startup spun out of Cornell University. Our<br />
-          advanced camera systems & computer vision software <br />
-          gather precision data for the visible fruit on any tree.
+        <h1>Precision Vineyard Management</h1>
+        <p className="subtext">
+          Our robot autonomously navigates your vineyard, leveraging advanced
+          camera systems and powerful vision algorithms for{" "}
+          <strong>real-time disease detection</strong>.
         </p>
-        <a href="#contact" className="btn" id="contactButton">Contact Us</a>
+        <a href="#contact" className="btn" id="contactButton">
+          Contact Us
+        </a>
       </div>
       <div className="hero-image">
         <img src="hero.jpg" alt="Vineyard Vision Technology" />

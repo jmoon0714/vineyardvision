@@ -1,6 +1,6 @@
 #technology {
   padding: 100px 50px;
-  background-color: #fff9ed;
+  background-color: var(--tech-background-color);
   text-align: center;
 }
 
@@ -25,6 +25,7 @@
 .tech-image p {
   margin-top: 10px;
   font-size: 1.2em;
+  color: var(--tech-font-color);
 }
 
 .tech-details {
@@ -35,18 +36,18 @@
 .tech-details h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #04212b;
+  color: var(--tech-title-color);
 }
 
 .tech-details .highlight {
-  color: #0b795a;
+  color: var(--tech-highlight-color);
   text-decoration: underline;
 }
 
 .tech-details p {
   font-size: 1.2em;
   margin-bottom: 30px;
-  color: #04212b;
+  color: var(--tech-font-color);
 }
 
 .tech-features {
@@ -65,25 +66,26 @@
 }
 
 .feature .feature-content {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   position: relative;
 }
 
-.feature .feature-front, .feature .feature-back {
+.feature .feature-front,
+.feature .feature-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: px;
+  padding: 20px;
+  background-color: var(--feature-background-color);
 }
 
 .feature .feature-back {
-  background-color: #fff;
   transform: rotateY(180deg);
 }
 
@@ -96,15 +98,15 @@
   margin-bottom: 20px;
 }
 
-.feature h3 {
+.feature .feature-front h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #04212b;
+  color: var(--feature-title-color);
 }
 
-.feature p {
+.feature .feature-front p {
   font-size: 1.2em;
-  color: #04212b;
+  color: var(--feature-font-color);
 }
 
 .feature.logos {
@@ -121,6 +123,6 @@
 
 .feature.logos span {
   font-size: 1em;
-  color: #000;
+  color: var(--feature-font-color);
   margin-left: 10px;
 }

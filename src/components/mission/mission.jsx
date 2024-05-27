@@ -1,23 +1,28 @@
-import React from 'react';
-import './mission.scss';
+import React from "react";
+import "./mission.scss";
 
 const Mission = () => {
   return (
-    <section id="mission">
+    <section id="mission" className="container">
       <div className="mission-background">
         <div className="mission-content">
           <div className="mission-header">
             <h2>Our Mission</h2>
           </div>
           <h2>
-            Vineyard disease control is <span className="highlight">expensive</span> and <span className="highlight">ineffective</span>.
+            Vineyard disease control is{" "}
+            <span className="highlight">expensive</span> and{" "}
+            <span className="highlight">ineffective</span>.
           </h2>
           <div className="mission-features">
             <div className="mission-feature">
               <img src="costly_white.png" alt="Costly Icon" />
               <h3>Costly</h3>
               <ul>
-                <li>25% of total vineyard management cost. Highest expense contributor.</li>
+                <li>
+                  25% of total vineyard management cost. Highest expense
+                  contributor.
+                </li>
                 <li>~$1B/yr spent on vineyard pesticide in U.S.</li>
               </ul>
             </div>

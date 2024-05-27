@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './technology.scss';
+import React, { useState } from "react";
+import "./technology.scss";
 
 const Technology = () => {
   const [flipped, setFlipped] = useState([false, false, false, false]);
@@ -17,7 +17,7 @@ const Technology = () => {
   };
 
   return (
-    <section id="technology">
+    <section id="technology" className="container">
       <div className="tech-content">
         <div className="tech-image">
           <img src="prototype.png" alt="Prototype Image" />
@@ -29,9 +29,9 @@ const Technology = () => {
           </h2>
           <p>a game-changing vineyard disease scouting robot</p>
           <div className="tech-features">
-            <div 
-              className={`feature ${flipped[0] ? 'flipped' : ''}`} 
-              onMouseEnter={() => handleMouseEnter(0)} 
+            <div
+              className={`feature ${flipped[0] ? "flipped" : ""}`}
+              onMouseEnter={() => handleMouseEnter(0)}
               onMouseLeave={() => handleMouseLeave(0)}
             >
               <div className="feature-content">
@@ -46,9 +46,9 @@ const Technology = () => {
                 </div>
               </div>
             </div>
-            <div 
-              className={`feature ${flipped[1] ? 'flipped' : ''}`} 
-              onMouseEnter={() => handleMouseEnter(1)} 
+            <div
+              className={`feature ${flipped[1] ? "flipped" : ""}`}
+              onMouseEnter={() => handleMouseEnter(1)}
               onMouseLeave={() => handleMouseLeave(1)}
             >
               <div className="feature-content">
@@ -63,9 +63,9 @@ const Technology = () => {
                 </div>
               </div>
             </div>
-            <div 
-              className={`feature ${flipped[2] ? 'flipped' : ''}`} 
-              onMouseEnter={() => handleMouseEnter(2)} 
+            <div
+              className={`feature ${flipped[2] ? "flipped" : ""}`}
+              onMouseEnter={() => handleMouseEnter(2)}
               onMouseLeave={() => handleMouseLeave(2)}
             >
               <div className="feature-content">
@@ -80,9 +80,9 @@ const Technology = () => {
                 </div>
               </div>
             </div>
-            <div 
-              className={`feature ${flipped[3] ? 'flipped' : ''}`} 
-              onMouseEnter={() => handleMouseEnter(3)} 
+            <div
+              className={`feature ${flipped[3] ? "flipped" : ""}`}
+              onMouseEnter={() => handleMouseEnter(3)}
               onMouseLeave={() => handleMouseLeave(3)}
             >
               <div className="feature-content">

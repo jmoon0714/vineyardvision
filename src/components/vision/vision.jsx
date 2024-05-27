@@ -1,16 +1,17 @@
-import React from 'react';
-import './vision.scss';
+import React from "react";
+import "./vision.scss";
 
 const Vision = () => {
   return (
-    <section id="vision">
+    <section id="vision" className="container">
       <div className="vision-background">
         <div className="vision-content">
           <div className="vision-header">
             <h2>Our Vision</h2>
           </div>
           <h2>
-            Manage Vineyard Health with <span className="highlight">Precision</span>
+            Manage Vineyard Health with{" "}
+            <span className="highlight">Precision</span>
           </h2>
           <div className="vision-features">
             <div className="feature">
@@ -34,10 +35,8 @@ const Vision = () => {
             <div className="feature">
               <div className="feature-content">
                 <img src="rocket.png" alt="Unmatched Insights Icon" />
-                <div>
-                  <h3>Unmatched Insights</h3>
-                  <p>Real-time data and comprehensive vineyard insights.</p>
-                </div>
+                <h3>Unmatched Insights</h3>
+                <p>Real-time data and comprehensive vineyard insights.</p>
               </div>
             </div>
           </div>

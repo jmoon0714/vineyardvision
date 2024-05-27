@@ -1,41 +1,43 @@
-/* Importing individual component styles */
-@import './components/header/header.scss';
-@import './components/hero/hero.scss';
-@import './components/mission/mission.scss';
-@import './components/vision/vision.scss';
-@import './components/team/team.scss';
-@import './components/news/news.scss';
-@import './components/technology/technology.scss';
-@import './components/contact/contact.scss';
-@import './components/footer/footer.scss';
+@import "./styles/variables";
+@import "./styles/mixins";
+@import "./components/header/header";
+@import "./components/hero/hero";
+@import "./components/mission/mission";
+@import "./components/vision/vision";
+@import "./components/team/team";
+@import "./components/news/news";
+@import "./components/technology/technology";
+@import "./components/contact/contact";
+@import "./components/footer/footer";
 
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff9ed;
+  @include light-theme; // Default to light theme
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* Set a maximum width for the main container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add some padding for better appearance */
 }
 
 #top-banner {
-  background-color: #04212b;
+  background-color: $light-primary-color; // Default to light theme
   text-align: center;
   padding: 10px 0;
-}
 
-#top-banner p {
-  margin: 0;
-  color: #fff9ed;
-}
+  p {
+    margin: 0;
+    color: $light-background-color; // Default to light theme
+  }
 
-#top-banner a {
-  color: #fff9ed;
-  text-decoration: none;
+  a {
+    color: $light-background-color; // Default to light theme
+    text-decoration: none;
+  }
 }
 
 /* Button Animation */
@@ -56,4 +58,13 @@ body {
 
 .btn.pulse {
   animation: pulse 2s infinite;
+}
+
+/* Theme Classes */
+body.light {
+  @include light-theme;
+}
+
+body.dark {
+  @include dark-theme;
 }

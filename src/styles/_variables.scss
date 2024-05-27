@@ -1,0 +1,25 @@
+// Light Theme
+$light-background-color: #fff9ed;
+$light-primary-color: #0b795a;
+$light-secondary-color: #011d28;
+$light-font-color: #333;
+$light-link-color: #0b795a;
+$light-link-hover-color: darken(#0b795a, 10%);
+
+// Dark Theme
+$dark-background-color: #333;
+$dark-primary-color: #fff9ed;
+$dark-secondary-color: #0b795a;
+$dark-font-color: #fff;
+$dark-link-color: #fff9ed;
+$dark-link-hover-color: lighten(#fff9ed, 10%);
+
+// Additional Colors
+$black-color: #011d28;
+$white-color: #fffcec;
+$dark-green: #0b795a;
+$medium-green: #2fa687;
+$light-green: #b3dfd3;
+$dark-purple: #5a0b79;
+$medium-purple: #7d5a79;
+$light-purple: #d492cd;
