@@ -2,12 +2,14 @@
 $light-background-color: #fff9ed;
 $light-primary-color: #0b795a;
 $light-secondary-color: #011d28;
-$light-font-color: #333;
+$light-font-color: #011d28;
 $light-link-color: #0b795a;
 $light-link-hover-color: darken(#0b795a, 10%);
+$light-svg-color: #011d28;
+$light-svg-hover-color: #0b795a;
 
 // Dark Theme
-$dark-background-color: #333;
+$dark-background-color: #011d28;
 $dark-primary-color: #fff9ed;
 $dark-secondary-color: #0b795a;
 $dark-font-color: #fff;
@@ -23,3 +25,67 @@ $light-green: #b3dfd3;
 $dark-purple: #5a0b79;
 $medium-purple: #7d5a79;
 $light-purple: #d492cd;
+
+/* Light Theme */
+:root {
+  --clr-navbar-bg: #fff9ed;
+  --clr-link: #0b795a;
+  --clr-span: #011d28;
+  --clr-hover: #011d28;
+  --clr-span-hover: #0b795a;
+  --clr-underline: #0b795a;
+  --clr-hero-bg: #fff9ed;
+  --clr-hero-font: #000;
+  --clr-hero-btn-bg: #0b795a;
+  --clr-hero-btn-font: #fff9ed;
+  --clr-hero-btn-hover-bg: #04212b;
+  --clr-tech-bg: #fff9ed;
+  --clr-tech-font: #04212b;
+  --clr-tech-title: #04212b;
+  --clr-tech-highlight: #0b795a;
+  --clr-feature-bg: #fff;
+  --clr-feature-title: #04212b;
+  --clr-feature-font: #04212b;
+  --clr-contact-bg: #fff9ed;
+  --clr-contact-font: #04212b;
+  --clr-contact-title: #04212b;
+  --clr-form-bg: #fff;
+  --clr-form-border: #ccc;
+  --clr-form-input-bg: #fff;
+  --clr-form-input-font: #000;
+  --clr-form-submit-bg: #0b795a;
+  --clr-form-submit-font: #fff9ed;
+  --clr-form-submit-hover-bg: #04212b;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --clr-navbar-bg: #011d28;
+  --clr-link: #fff9ed;
+  --clr-span: #0b795a;
+  --clr-hover: #0b795a;
+  --clr-span-hover: #fff9ed;
+  --clr-underline: #fff9ed;
+  --clr-hero-bg: #011d28;
+  --clr-hero-font: #fff;
+  --clr-hero-btn-bg: #0b795a;
+  --clr-hero-btn-font: #fff9ed;
+  --clr-hero-btn-hover-bg: #04212b;
+  --clr-tech-bg: #333;
+  --clr-tech-font: #fff;
+  --clr-tech-title: #fff9ed;
+  --clr-tech-highlight: #0b795a;
+  --clr-feature-bg: #444;
+  --clr-feature-title: #fff9ed;
+  --clr-feature-font: #fff;
+  --clr-contact-bg: #333;
+  --clr-contact-font: #fff;
+  --clr-contact-title: #fff9ed;
+  --clr-form-bg: #444;
+  --clr-form-border: #555;
+  --clr-form-input-bg: #555;
+  --clr-form-input-font: #fff;
+  --clr-form-submit-bg: #0b795a;
+  --clr-form-submit-font: #fff9ed;
+  --clr-form-submit-hover-bg: #04212b;
+}

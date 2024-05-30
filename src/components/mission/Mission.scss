@@ -1,0 +1,17 @@
+#mission {
+  background-image: "barrel_background.png";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.7); /* Lighten the background image */
+}
+
+.dark #mission {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Darken the background image in dark mode */
+}

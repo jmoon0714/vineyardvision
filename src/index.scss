@@ -1,70 +1,108 @@
-@import "./styles/variables";
-@import "./styles/mixins";
-@import "./components/header/header";
-@import "./components/hero/hero";
-@import "./components/mission/mission";
-@import "./components/vision/vision";
-@import "./components/team/team";
-@import "./components/news/news";
-@import "./components/technology/technology";
-@import "./components/contact/contact";
-@import "./components/footer/footer";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  @include light-theme; // Default to light theme
+strong {
+  color: #0b795a;
+}
+.dark strong {
+  color: #c166b9;
+}
+.nav-item {
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out,
+    color 0s ease-in-out;
+  position: relative;
+  color: var(--text-color); /* Default color */
 }
 
-.container {
-  max-width: 1200px; /* Set a maximum width for the main container */
-  margin: 0 auto; /* Center the container */
-  padding: 0 20px; /* Add some padding for better appearance */
+.dark .nav-item {
+  color: #fff9ed; /* Dark mode text color */
 }
 
-#top-banner {
-  background-color: $light-primary-color; // Default to light theme
-  text-align: center;
-  padding: 10px 0;
-
-  p {
-    margin: 0;
-    color: $light-background-color; // Default to light theme
-  }
-
-  a {
-    color: $light-background-color; // Default to light theme
-    text-decoration: none;
-  }
+.nav-item-large {
+  transform: scale(1.1);
+  font-size: 1.25rem; /* Adjust as needed */
 }
 
-/* Button Animation */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  50% {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
+.nav-item-small {
+  transform: scale(1);
+  font-size: 1.25rem; /* Adjust as needed */
 }
 
-.btn.pulse {
-  animation: pulse 2s infinite;
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #0b795a; /* Color for "Our" */
+  width: 0;
+  height: 2px;
+  background-color: currentColor; /* Uses the current text color */
+  transition: width 0.3s ease;
 }
 
-/* Theme Classes */
-body.light {
-  @include light-theme;
+.nav-item:hover::after {
+  width: 100%;
 }
 
-body.dark {
-  @include dark-theme;
+.nav-item span:first-child {
+  color: #0b795a; /* Color for "Our" */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item span:last-child {
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover span:first-child {
+  color: inherit; /* Swap to standard color on hover */
+}
+
+.nav-item:hover span:last-child {
+  color: #0b795a; /* Swap to primary color on hover */
+}
+
+.dark .nav-item span:first-child {
+  color: #c166b9; /* Color for "Our" */
+  transition: color 0.3s ease-in-out;
+}
+
+.dark .nav-item span:last-child {
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.dark .nav-item:hover span:first-child {
+  color: inherit; /* Swap to standard color on hover */
+}
+
+.dark .nav-item:hover span:last-child {
+  color: #c166b9; /* Swap to primary color on hover */
+}
+/* Navbar transition styles */
+#header {
+  transition: padding 0.5s ease-in-out;
+}
+
+#header.scrolled {
+  padding: 0rem 1rem;
+}
+
+#header .logo {
+  transition: height 0.5s ease-in-out;
+  height: 100px;
+}
+
+#header.scrolled .logo {
+  height: 80px;
+}
+
+/* Custom styles */
+.logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-small {
+  transform: scale(0.8);
 }
